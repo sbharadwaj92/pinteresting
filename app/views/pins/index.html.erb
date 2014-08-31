@@ -1,4 +1,4 @@
-<%= render 'pages/home' unless user_signed_in? %>
+<%= render 'pages/home' %>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
@@ -14,11 +14,11 @@
           <div class="actions">
 
             <%= link_to edit_pin_path(pin) do %>
-              Edit
+              <span class="glyphicon glyphicon-edit"></span>Edit
             <% end %>
 
             <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              Delete
+              <span class="glyphicon glyphicon-trash"></span>Delete
             <% end %>
 
           </div>

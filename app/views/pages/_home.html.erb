@@ -1,7 +1,21 @@
 <div class="jumbotron center">
-	<h1>Welcome to my app!</h1>
-	<p>
-		<%= link_to "SIGN IN", new_user_session_path, class: "btn btn-default btn-lg" %>
-		<%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-	</p>
+	
+	<% if user_signed_in? %>
+			<h1>Cool!</h1>
+			<p>Now you can add images and edit them</p>
+
+	<% else %>
+		<h1>Welcome to my Pinterest App !</h1>
+		<p> Please Sign in to add images and edit them</p>
+		<p>
+			<%= link_to new_user_session_path, class: "btn btn-default btn-lg" do %>
+			<span class="glyphicon glyphicon-log-in"></span>  SIGN IN
+			<% end %>
+
+			<%= link_to new_user_registration_path, class: "btn btn-primary btn-lg" do %>
+			<span class="glyphicon glyphicon-new-window"></span>  SIGN UP
+			<% end %>
+		</p>
+	<% end %>
+
 </div>

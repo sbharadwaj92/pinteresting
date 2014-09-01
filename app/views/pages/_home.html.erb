@@ -2,11 +2,11 @@
 	
 	<% if user_signed_in? %>
 			<h1>Cool!</h1>
-			<p>Now you can add pins and edit them</p>
+			<p>Now you can add/edit pins</p>
 
 	<% else %>
-		<h1>Welcome to my Pinterest App !</h1>
-		<p> Please Sign in to add pins and edit them</p>
+		<h2>Welcome to Santosh's Pinterest App !</h2>
+		<p> Please Sign in to add/edit pins</p>
 		<p>
 			<%= link_to new_user_session_path, class: "btn btn-default btn-lg" do %>
 			<span class="glyphicon glyphicon-log-in"></span>  SIGN IN

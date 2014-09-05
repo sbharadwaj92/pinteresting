@@ -5,9 +5,11 @@
 			<p>Now you can add/edit pins</p>
 
 	<% else %>
+
 		<h2>Welcome to Santosh's Pinterest App !</h2>
 		<p> Please Sign in to add/edit pins</p>
 		<p>
+			
 			<%= link_to new_user_session_path, class: "btn btn-default btn-lg" do %>
 			<span class="glyphicon glyphicon-log-in"></span>  SIGN IN
 			<% end %>
@@ -15,7 +17,9 @@
 			<%= link_to new_user_registration_path, class: "btn btn-primary btn-lg" do %>
 			<span class="glyphicon glyphicon-new-window"></span>  SIGN UP
 			<% end %>
+
 		</p>
+		
 	<% end %>
 
 </div>

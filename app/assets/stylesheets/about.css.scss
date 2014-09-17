@@ -2,26 +2,28 @@
 	 font-family: 'Lato', sans-serif;
 	  line-height: 1.5;
 	  color: white;
-	  background-image: url(image-path('Lion.jpg'));
-	 /* background: url('/app/assets/images/Lion.jpg');*/
-	  /* Full Page Background Receipe */
+	  background-image: url(image-path('daft-sam.gif'));
 	  background-size: cover;
-	  background-position: center;
+	  background-position: left;
 	  background-attachment: fixed;
 }
 
 .about_container { 
-    width: 500px; 
-    margin: 0 auto;  
+    width:500px; 
+    margin: 50px;  
     background: rgba(0,0,0,0.5);
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 25px;
     text-align: center;
  }
 
 .about_h1 {
-  font-size: 80px;
-  margin-bottom: -40px;
+  font-size: 50px;
+  //margin-bottom: -40px;
+}
+
+.about_h4 {
+  text-align: left;
 }
 
 .about_a { 

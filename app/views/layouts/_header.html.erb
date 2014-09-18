@@ -19,8 +19,14 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
 
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to root_path, class: "navbar-right" do%>
+          <span class = "glyphicon glyphicon-home"></span>  Home
+          <% end %>
+        </li>
+        <li><%= link_to about_path class: "navbar-right" do%>
+          <span class = "glyphicon glyphicon-bullhorn"></span>  About
+          <% end %>
+        </li>
         
 
         <!--<% if user_signed_in? %>
@@ -46,7 +52,7 @@
               <ul class="dropdown-menu" role="menu">
                   <li>
                     <%= link_to new_pin_path do%>
-                      <span class="glyphicon glyphicon-plus"></span> Create New Pin
+                      <span class="glyphicon glyphicon-plus"></span> New Pin
                     <% end %>
                   </li>
                   <li>

@@ -19,11 +19,11 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
 
-        <li><%= link_to root_path do%>
+        <li class ="nav-rig"><%= link_to root_path do%>
           <span class = "glyphicon glyphicon-home"></span>  Home
           <% end %>
         </li>
-        <li><%= link_to about_path do%>
+        <li class="nav-rig"><%= link_to about_path do%>
           <span class = "glyphicon glyphicon-bullhorn"></span>  About
           <% end %>
         </li>
@@ -71,7 +71,7 @@
         <% else %>
             <li>
                 <%= link_to new_user_session_path do%>
-                <span class="glyphicon glyphicon-log-in"></span> Sign In
+                <!--<span class="glyphicon glyphicon-log-in"></span>-->Sign In
                 <% end %>
             </li>
         <% end %>

@@ -34,11 +34,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-ActionMailer::Base.default_url_options[:only_path] = false
-  config.action_mailer.default_url_options = { 
-                                                host: 'localhost:3000',
-                                                only_path: false
-                                              }
+
+  config.action_mailer.default_url_options = { host: 'localhost:3000',}
   # Required for Heroku
 
   config.action_mailer.delivery_method = :smtp

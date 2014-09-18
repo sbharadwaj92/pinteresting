@@ -3,7 +3,7 @@
 $body-bg:							#ecf0f1;
 $font-family-sans-serif:			'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:						45px;
-$navbar-default-bg:					#1B1F8E;
+$navbar-default-bg:					black;
 $navbar-default-brand-color:		#E15D10;
 $brand-primary:						#c0392b;
 $jumbotron-bg:						white;
@@ -18,6 +18,6 @@ $jumbotron-bg:						white;
      font-weight: bold;
 }
 
-.navbar-right{
+.navbar-nav {
 	color: #FFFFFF;
 }

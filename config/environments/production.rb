@@ -107,8 +107,5 @@ Rails.application.configure do
   password: ENV["GMAIL_PASSWORD"]
   }
 
-
   Rails.application.routes.default_url_options[:host] = 'san-pinteresting.herokuapp.com'
-
-
 end
